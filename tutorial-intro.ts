@@ -7,6 +7,8 @@
 //  - A place to experiment with TypeScript syntax, and share the URLs with others
 //  - A sandbox to experiment with different compiler features of TypeScript
 
+// Wrap the whole tutorial in a closure / anonymous function
+(function () {
 const anExampleVariable = "Hello World"
 console.log(anExampleVariable)
 
@@ -78,7 +80,7 @@ interface Backpack<Type> {
 
 // This line is a shortcut to tell TypeScript there is a
 // constant called `backpack`, and to not worry about where it came from.
-declare const backpack: Backpack<string>;
+// declare const backpack: Backpack<string>;
 
 // object is a string, because we declared it above as the variable part of Backpack.
 // backpack.add("toto");
@@ -133,3 +135,6 @@ class VirtualPoint {
 
 const newVPoint = new VirtualPoint(13, 56);
 logPoint(newVPoint);
+
+})();
+
