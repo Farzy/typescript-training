@@ -1,5 +1,16 @@
 // https://www.typescriptlang.org/docs/handbook/typescript-tooling-in-5-minutes.html
 
+class Student {
+    fullName: string;
+    constructor(
+        public firstName: string,
+        public middleName: string,
+        public lastName: string
+    ) {
+        this.fullName = firstName + " " + middleName + " " + lastName;
+    }
+}
+
 interface Person {
     firstName: string;
     lastName: string;
@@ -9,6 +20,6 @@ function greeter(person: Person) {
     return "Hello, " + person.firstName + " " + person.lastName;
 }
 
-let user = { firstName: "Jane", lastName: "User" };
+let user = new Student("Jane", "M.", "User");
 
 document.body.textContent = greeter(user);
