@@ -6,5 +6,8 @@
   },
   "devDependencies": {
     "ts-node": "^10.9.1"
+  },
+  "scripts": {
+    "build": "npm exec tsc"
   }
 }
