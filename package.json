@@ -2,10 +2,10 @@
   "name": "typescript-training",
   "version": "1.0.0",
   "dependencies": {
-    "typescript": "^4.9.3"
+    "typescript": "^7.0.2"
   },
   "devDependencies": {
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.2"
   },
   "scripts": {
     "build": "npm exec tsc"
